@@ -15,6 +15,7 @@
 /log/*.log
 /tmp
 /config/secrets.yml
+/config/local_env.yml
 /public/system/posts
 
 .env

@@ -26,12 +26,5 @@ describe 'payments' do
 			expect(current_path).to eq new_charge_path
 			expect(page).to have_content "Amount: £2.50"
 		end
-
-		it 'user can pay by credit card' do
-			visit '/posts'
-			click_link 'Buy test2 - £2.50'
-			find('.pay-button').click
-			
-		end
 	end
 end
