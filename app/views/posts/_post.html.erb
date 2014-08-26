@@ -7,8 +7,9 @@
 		<div class='grid-box col-md-5 col-sm-3'>
 			<div class='img-thumbnail'>
 				<%= image_tag post.picture1.url(:medium), class: 'first_upload img-responsive' %>
-			<h3><%=post.caption1 %> </h3>
-			<%= link_to post.tags.first.text, post.tags.first %>
+				<h3><%=post.caption1 %> </h3>
+				<%= link_to "Buy #{post.caption1} - £2.50", new_charge_path %>
+				<%= link_to post.tags.first.text, post.tags.first %>
 			</div>
 		</div>
 	<% end %>
@@ -38,8 +39,9 @@
 		<div class='grid-box col-md-5 col-sm-3'>
 			<div class='img-thumbnail'>
 				<%= image_tag post.picture2.url(:medium), class: 'second_upload img-responsive' %>
-			<h3><%=post.caption2 %> </h3>
-			<%= link_to post.tags.last.text, post.tags.last %>
+				<h3><%=post.caption2 %> </h3>
+				<%= link_to "Buy #{post.caption2} - £2.50", new_charge_path %>
+				<%= link_to post.tags.last.text, post.tags.last %>
 			</div>
 		</div>
 	<% end %>

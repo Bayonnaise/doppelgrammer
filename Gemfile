@@ -7,7 +7,7 @@ gem 'factory_girl_rails'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'bootstrap-sass'
 gem 'autoprefixer-rails'
-gem 'launchy'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
@@ -41,6 +41,7 @@ group :development, :test do
 	gem 'rspec-collection_matchers'
 	gem 'poltergeist'
 	gem 'database_cleaner'
+	gem 'launchy'
 end
 
 gem 'rails_12factor', group: :production
