@@ -6,12 +6,6 @@ Objectives
 
 With a decent grounding in Rails, this week introduced images and the use of Amazon Web Services. We were to build an Instragram-style site for uploading and rating images. I paired with [Charlotte Kelly](https://github.com/cmew3) for the whole week, and we veered away from a straight Instagram clone in favour of a lookalikes theme with pairs of uploaded images. The result is [Doppelgrammer](http://doppelgrammer.herokuapp.com/).
 
-Screenshot
----
-Coming soon...
-
----
-
 New concepts
 ---
 
@@ -21,3 +15,7 @@ New concepts
 - Geocoding with Google Maps
 - Twitter Bootstrap
 - Creating APIs using Rails + jBuilder
+
+Screenshot
+---
+Coming soon...
