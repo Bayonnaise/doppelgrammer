@@ -18,4 +18,4 @@ New concepts
 
 Screenshot
 ---
-Coming soon...
+![image](/app/assets/images/doppelgrammers.png)
