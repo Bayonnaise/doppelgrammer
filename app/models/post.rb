@@ -1,22 +1,21 @@
 class Post < ActiveRecord::Base
 
+  credentials = {
+    :bucket => 'doppelgrammer',
+    :access_key_id => Rails.application.secrets.s3_access_key_id,
+    :secret_access_key => Rails.application.secrets.s3_secret_access_key_id
+  }
+
   has_and_belongs_to_many :tags
   has_many :votes
   has_attached_file :picture1, styles: {medium: "300x300#"}, :storage => :s3,
-    :s3_credentials => {
-      :bucket => 'doppelgrammer',
-      :access_key_id => Rails.application.secrets.s3_access_key_id,
-      :secret_access_key => Rails.application.secrets.s3_secret_access_key_id
-    }
+    :s3_credentials => credentials
 
   validates_attachment_content_type :picture1, :content_type => /\Aimage\/.*\Z/
   validates :picture1, presence: true
 
-  has_attached_file :picture2, styles: {medium: "300x300#"}, :storage => :s3, :s3_credentials => {
-      :bucket => 'doppelgrammer',
-      :access_key_id => Rails.application.secrets.s3_access_key_id,
-      :secret_access_key => Rails.application.secrets.s3_secret_access_key_id
-    }
+  has_attached_file :picture2, styles: {medium: "300x300#"}, :storage => :s3,
+    :s3_credentials => credentials
     
   validates_attachment_content_type :picture2, :content_type => /\Aimage\/.*\Z/
   validates :picture2, presence: true

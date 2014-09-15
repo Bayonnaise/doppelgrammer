@@ -1,4 +1,4 @@
-Week 9: build an Instagram-style site
+Week 9: build an Instagram-style site [![Code Climate](https://codeclimate.com/github/Bayonnaise/doppelgrammer/badges/gpa.svg)](https://codeclimate.com/github/Bayonnaise/doppelgrammer) [![Test Coverage](https://codeclimate.com/github/Bayonnaise/doppelgrammer/badges/coverage.svg)](https://codeclimate.com/github/Bayonnaise/doppelgrammer)
 ===
 
 Objectives

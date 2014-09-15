@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "codeclimate-test-reporter", group: :test, require: nil
+
 gem 'paperclip', github: 'thoughtbot/paperclip'
 gem 'aws-sdk'
 gem 'devise'
